@@ -1,0 +1,15 @@
+## Interface: 100206
+
+## Title: |cff8080FFUnhaltedUI|r
+## Version: 1.0
+## Author: Unhalted
+## DefaultState: Enable
+## IconTexture: Interface\AddOns\UnhaltedUI\StatusBars\Logo
+
+Libs\LibStub.lua
+Libs\CallbackHandler-1.0.lua
+Libs\LibSharedMedia-3.0.lua
+
+UnhaltedUI.lua
+UnhaltedUI_RegisterMedia.lua
+Bindings.lua

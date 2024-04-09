@@ -1,0 +1,11 @@
+<Bindings>
+    <Binding name="UHUIHIDEBARS" category="UnhaltedUI">
+      local b,E={1,2,3,4},unpack(ElvUI)for _,n in pairs(b)do local s=E.db.actionbar["bar"..n].visibility;E.db.actionbar["bar"..n].visibility=(s=="hide" and "show" or "hide")E.ActionBars:PositionAndSizeBar("bar"..n)end
+    </Binding>
+    <Binding name="UHUILEAVEPARTY" category="UnhaltedUI">
+      C_PartyInfo.LeaveParty()
+    </Binding>
+    <Binding name="UHUIOPENVAULT" category="UnhaltedUI">
+      LoadAddOn("Blizzard_WeeklyRewards"); if WeeklyRewardsFrame:IsShown() then WeeklyRewardsFrame:Hide() else  WeeklyRewardsFrame:Show() end
+    </Binding>
+</Bindings>
