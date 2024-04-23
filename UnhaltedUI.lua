@@ -20,7 +20,7 @@ local UserOptions = {
     healMeterSize = {227, 201},
     dmgMeterAnchors = {"BOTTOMRIGHT", "BOTTOMRIGHT", -10, 10},
     healMeterAnchors = {"BOTTOMRIGHT", "BOTTOMRIGHT", -237, 10},
-    backdropColor = {20/255, 20/255, 20/255, 1.0},
+    backdropColor = {8/255, 8/255, 8/255, 0.75},
 }
 -- =================================================== --
 -- END OF USER OPTIONS =============================== --
@@ -130,9 +130,6 @@ end
 function UH:AutoScreenshot()
     local AutoScreenshot = CreateFrame("Frame")
     AutoScreenshot:RegisterEvent("ACHIEVEMENT_EARNED")
-    AutoScreenshot:RegisterEvent("PLAYER_LEVEL_UP")
-    AutoScreenshot:RegisterEvent("COMPANION_LEARNED")
-    AutoScreenshot:RegisterEvent("NEW_MOUNT_ADDED")
     AutoScreenshot:SetScript("OnEvent", function(self, event, ...) C_Timer.After(1, function() Screenshot() end) end)
 end
 
@@ -148,3 +145,4 @@ function UH:SetupCVars()
         SetCVar("floatingCombatTextCombatHealing", 0)
     end
 end
+
